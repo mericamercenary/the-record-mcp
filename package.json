@@ -1,0 +1,14 @@
+{
+  "name": "the-record-mcp",
+  "version": "0.1.0",
+  "description": "Read-only MCP server for THE RECORD: U.S. government decisions, representatives, places, and the Constitution.",
+  "type": "module",
+  "license": "MIT",
+  "bin": { "the-record-mcp": "src/stdio.mjs", "the-record-mcp-http": "src/server.mjs" },
+  "main": "src/record.mjs",
+  "files": ["src", "data", "README.md", "LICENSE", "wrangler.toml"],
+  "engines": { "node": ">=20.10" },
+  "scripts": { "test": "node --test test/", "start": "node src/stdio.mjs", "http": "node src/server.mjs" },
+  "repository": { "type": "git", "url": "git+https://github.com/mericamercenary/the-record-mcp.git" },
+  "keywords": ["mcp", "model-context-protocol", "congress", "civic", "read-only"]
+}

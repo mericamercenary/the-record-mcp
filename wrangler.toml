@@ -1,0 +1,4 @@
+# Cloudflare Workers (free plan). `npx wrangler deploy` after `npx wrangler login`.
+name = "the-record-mcp"
+main = "src/http.mjs"
+compatibility_date = "2026-10-01"
